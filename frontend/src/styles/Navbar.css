@@ -1,5 +1,6 @@
+/* Estilos Navbar */
+
 .navbar {
-  /* Barra superior con gradiente en gama naranja */
   background: linear-gradient(90deg, #ea580c 0%, var(--primary-color) 50%, #fb923c 100%);
   box-shadow: var(--shadow-md);
   position: sticky;
