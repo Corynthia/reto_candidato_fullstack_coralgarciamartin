@@ -1,0 +1,74 @@
+.totales-consolidados {
+  /* Panel de totales con fondo muy suave en la gama turquesa */
+  background: linear-gradient(135deg, rgba(20, 150, 162, 0.04) 0%, rgba(11, 100, 112, 0.02) 100%);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.totales-titulo {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+.totales-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.total-item {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s;
+}
+
+.total-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.total-item.capital-ahorrado {
+  border-left: 4px solid #10b981;
+}
+
+.total-item.capital-prestado {
+  border-left: 4px solid #3b82f6;
+}
+
+.total-item.utilidades {
+  border-left: 4px solid #f59e0b;
+}
+
+.total-icon {
+  font-size: 3rem;
+}
+
+.total-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.total-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.total-valor {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
