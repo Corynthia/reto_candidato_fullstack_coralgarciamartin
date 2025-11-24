@@ -1,0 +1,137 @@
+.inicio-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.inicio-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.inicio-titulo {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  /* Degradado en tonos naranjas para el hero principal */
+  background: linear-gradient(120deg, #ea580c 0%, var(--primary-color) 40%, #fed7aa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.inicio-subtitulo {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.filtros-consolidados {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  background-color: #f9fafb;
+  border: 1px solid var(--border-color);
+}
+
+.filtro-pais label {
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-right: 0.75rem;
+}
+
+.filtro-select {
+  min-width: 260px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background-color: #ffffff;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.filtro-select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(20, 150, 162, 0.18);
+}
+
+.vista-indicador {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.paises-seccion {
+  margin-bottom: 3rem;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.paises-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/*
+  Variante de la cuadrícula cuando solo se muestra un país concreto.
+  Centra la tarjeta y reduce el ancho máximo para que se vea más compacta.
+*/
+.paises-grid-detalle {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: 1fr;
+}
+
+.consolidados-seccion {
+  margin-bottom: 3rem;
+}
+
+.inicio-footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-secondary);
+  border-top: 1px solid var(--border-color);
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .inicio-titulo {
+    font-size: 2rem;
+  }
+
+  .inicio-subtitulo {
+    font-size: 1rem;
+  }
+
+  .filtros-consolidados {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filtro-select {
+    width: 100%;
+  }
+
+  .paises-grid {
+    grid-template-columns: 1fr;
+  }
+}
