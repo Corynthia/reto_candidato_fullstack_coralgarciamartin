@@ -120,6 +120,10 @@ const Inicio = () => {
         </div>
       </section>
 
+      <section className="consolidados-seccion">
+        <TotalesConsolidados totales={totalesParaMostrar} />
+      </section>
+
       <section className="paises-seccion">
         <h2 className="seccion-titulo">
           {esVistaGlobal
@@ -131,10 +135,6 @@ const Inicio = () => {
             <TarjetaPais key={datos.id} datos={datos} />
           ))}
         </div>
-      </section>
-
-      <section className="consolidados-seccion">
-        <TotalesConsolidados totales={totalesParaMostrar} />
       </section>
 
       <footer className="inicio-footer">
