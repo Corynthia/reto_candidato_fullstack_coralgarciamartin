@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="navbar-container">
         {/* Logotipo / nombre de la aplicación que enlaza a la página de inicio */}
         <Link to="/" className="navbar-logo">
-          <span className="logo-text">Savinco</span>
+          <span className="logo-text">App Financiera</span>
         </Link>
         <ul className="navbar-menu">
           <li className="navbar-item">
